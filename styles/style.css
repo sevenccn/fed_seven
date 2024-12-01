@@ -29,6 +29,8 @@
 /* JOUW STYLING */
 /****************/
 
+
+
 body {
 	background-image: url(/images/kehlani_bk.png);
 	background-size: cover;          
@@ -39,6 +41,25 @@ body {
 	position: relative;
 }
 
+header li:nth-of-type(1)  {
+	background-color: rgb(97, 33, 33);
+    display: flex;
+    justify-content: center;
+    color: white;
+	padding: 0.5em;
+	z-index: 5;
+}
+
+header li:nth-of-type(2)  {
+    display: flex;
+    justify-content: left;
+    color: white;
+	font-size: .7em;
+	padding: 0.5em;
+	z-index: 5;
+}
+
+
 p {	
 
 	display: flex;
@@ -47,6 +68,28 @@ p {
 }
 
 
+section :nth-of-type(1) ul{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+section:nth-of-type(1) ul li {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;    /* Center content horizontally */
+    margin: 1em;            /* Add spacing between list items */
+    text-align: center;     /* Center-align text under the image */
+}
+
+
+img {
+
+width: 15em;
+padding: .5em;
+}
 
 h1,h2{
 	display: flex;
@@ -59,21 +102,15 @@ padding: 0;
 }
 
 
-header li:nth-of-type(1) {
-	background-color: rgb(97, 33, 33);
-    display: flex;
-    justify-content: center;
-    color: white;
-	padding: 0.5em;
-	z-index: 5;
-}
 
 
-section:nth-of-type(2) h3,
-section:nth-of-type(3) h3 {
+
+section:nth-of-type(2) h3, summary {
     display: flex;
     justify-content: center;
 }
+
+
 
 
 section li {
