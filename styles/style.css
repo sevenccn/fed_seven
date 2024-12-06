@@ -1,11 +1,13 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
-  color: white;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	color: var(--color-text);
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
 }
 
 
@@ -17,8 +19,9 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #ffffff;
+	--color-background: #eee;
+	--color-button: rgb(88, 9, 22);
 }
 
 
@@ -32,100 +35,235 @@
 
 
 body {
-	background-image: url(/images/kehlani_bk.png);
-	background-size: cover;          
-    background-repeat: no-repeat;   
-    background-position: center;
+	background-image: url("/images/kehlani_bk.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	margin: 0;
-    padding: 0;
+	padding: 0;
 	position: relative;
 }
 
-header li:nth-of-type(1)  {
-	background-color: rgb(97, 33, 33);
-    display: flex;
-    justify-content: center;
-    color: white;
-	padding: 0.5em;
-	z-index: 5;
+p {
+margin: .6em;
 }
 
-header li:nth-of-type(2)  {
-    display: flex;
-    justify-content: left;
-    color: white;
-	font-size: .7em;
-	padding: 0.5em;
-	z-index: 5;
-}
-
-
-p {	
-
-	display: flex;
-	justify-self: center;
-	
-}
-
-
-section :nth-of-type(1) ul{
+header p {
 display: flex;
 justify-content: center;
-align-items: center;
-flex-direction: row;
-flex-wrap: wrap;
-}
-
-section:nth-of-type(1) ul li {
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center;    /* Center content horizontally */
-    margin: 1em;            /* Add spacing between list items */
-    text-align: center;     /* Center-align text under the image */
-}
-
-
-img {
-
-width: 15em;
-padding: .5em;
-}
-
-h1,h2{
-	display: flex;
-	justify-self: center;
+margin: 0;
 }
 
 
 ul {
-padding: 0;
+	padding: 0;
 }
 
 
-
-
-
-section:nth-of-type(2) h3, summary {
-    display: flex;
-    justify-content: center;
+ol {
+	padding: 1em; 
+	margin: 1.5em;
 }
 
 
+img {
+    width: 20em;
+    padding: 0.5em;
+}
 
-
-section li {
-	display: flex;
-    justify-content: center;
-	font-size: 1em;
-	padding: .6em;
+h1 {
+	font-size: 4em;
 }
 
 footer {
 	margin: 2em;
 }
-footer li, footer p {
+
+
+
+
+h1 a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+h1,
+h2 {
 	display: flex;
-    justify-content: center;
+	justify-self: center;
+}
+
+
+iframe {
+	margin: 0;
+	display: flex;
+	justify-self: center;
+}
+
+	
+
+header li:nth-of-type(1) {
+	background-color: rgb(97, 33, 33);
+	display: flex;
+	justify-content: center;
+	padding: 0.5em;
+	z-index: 100;
+	position: fixed; 
+	width: 375px; 
+	left: 0;
+	top: 0;
+}
+
+header li:nth-of-type(2) {
+	display: flex;
+	justify-content: left;
+	font-size: 1em;
+	padding: 0.5em;
+	margin-top: 2em;
+}
+
+
+ul h2 {
+	margin: 1em;
+}
+
+
+
+button {
+	border: 0;
+	background: var(--color-button);
+	border-radius: .5em;
+	box-shadow: 0 0.3125em 0 #6e1313;
+	cursor: pointer;
+	font: inherit;
+	margin: 2em .8em;
+	outline: 0;
+	padding: 1em 2em;
+	transition: all .1s linear;
+}
+
+button:hover { 
+	background: rgb(200, 0, 0);
+	transform: scale(1.05);
+	transition: .4s;
+}
+
+main > button {
+    position: sticky;
+    top: 3em; 
+}
+
+/* header > button { 
+	position: fixed;
+	bottom: .5em; 
+} */
+
+article {
+	margin: 1em;
+}
+
+article h2 {
+font-size: 2em;
+}
+
+
+
+form {
+margin: 1em;
+}
+
+form button {
+margin-left: 10em;
+
+
+}
+
+section:nth-of-type(2) h3,
+summary {
+	display: flex;
+	justify-content: center;
+}
+
+
+section :nth-of-type(1) ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section:nth-of-type(1) ul li {
+	margin: .6em;
+	text-align: center;
+}
+
+section li {
+	display: flex;
+	justify-content: center;
+	font-size: 1em;
+	padding: .6em;
+}
+
+
+
+ nav ul {
+    overflow-x: auto; 
+    padding: 0;
+    list-style: none; 
+	padding-left: 4em;
+}
+
+ nav ul li img {
+    width: 200px; 
+}
+
+
+
+summary {
+text-decoration: underline;
+}
+
+details li {
+text-decoration: none;
+}
+
+
+footer li,
+footer p {
+	display: flex;
+	justify-content: center;
 	font-size: 0.7em;
 }
 
+
+
+@keyframes switch-animation {
+    0% {
+        content: url("/images/kehlani_poster.png");
+    }
+    100% {
+        content: url("/images/kehlani_signed.png");
+    }
+} 
+
+img[aria-label="switch"] {
+    animation-name: switch-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+} 
+
+
+
+/* html:has(main > div) body {
+	background-image: url("/images/kehlani_foot.jpg");
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+main > div {
+display: none;
+} */

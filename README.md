@@ -104,10 +104,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik heb een betere uitwerking uitleg gekregen over hoe ik mijn html kan opbouwen omdat ik eerst teveel headers gebruikte (h1 tm 6 in plaats van de handigere manier waardoor ik nu h1 tm 3 gebruik.)
+  - Ik kreeg een uitleg waarom de sections beter werken voor mijn opbouw.
 
 </details>
 
@@ -137,8 +135,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - Ik liep aan het begin van het gesprek vast bij het feit dat ik niet wist hoe ik mijn eind stuk van mijn main niet wist te verwerken -> ik wilde namelijk graag een uitklap systeem voor mijn shop by cat en cust support en werd dus aangestuurd om een article te gebruiken waarin ik een summary en details kan zetten waardoor het uitklap effect voorkwam. Dit was extreem hulpvol voor mijn proces in het maken van mijn page.
+  - Ik liep ook vast bij hoe ik het beste mijn img en onderliggende tekst het beste samen kon vormgeven omdat ik zowel de img als de tekst wilde verwijzen naar de correct pagina.
   - nog een punt
 - ...
 
