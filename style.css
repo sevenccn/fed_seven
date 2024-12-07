@@ -23,7 +23,7 @@
 /* JOUW STYLING */
 /****************/
 body {
-	background-image: url("../images/kehlani_bk.png");
+	background-image: url(/images/kehlani_bk.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -208,12 +208,13 @@ footer p {
 
 @keyframes switch-animation {
     0% {
-        content: url("/images/kehlani_poster.png");
+        content: url(/images/kehlani_poster.png);
     }
     100% {
-        content: url("/images/kehlani_signed.png");
+        content: url(/images/kehlani_signed.png);
     }
-} 
+}
+
 
 img[aria-label="switch"] {
     animation-name: switch-animation;
